@@ -1,11 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/525fd6b0af.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "button-color": "#ABEF5F",
+              "button-text": "#1C1C1C",
+              "small-h1": "#494949",
+              "small-p": "#737373",
+            },
+            backgroundImage: {
+              mainSection:
+                "linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);",
+
+              "form-area": "url('./image/bg.jpg')",
+            },
+            fontFamily: {
+              manropeFont: '"Manrope", sans-serif;',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .manrope-font {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="manrope-font">
+    <!-- Header section start -->
+    <header
+      class="bg-gradient-to-b from-[hsla(0,0%,101%,1)] to-[hsla(0,0%,101%,0)]"
+    >
+      <!-- Navbar section -->
+      <section class="p-2">
+        <nav class="container mx-auto flex justify-between items-center pt-12">
+          <div class="flex items-center gap-1">
+            <button class="bg-[#ABEF5F] rounded-full">
+              <i
+                class="-rotate-45 text-xl md:text-2xl rounded-full w-12 h-12 flex justify-center items-center md:px-4 md:py-2.5 fa-solid fa-arrow-right"
+              ></i>
+            </button>
+            <div><h1 class="text-3xl font-[800]">Rinterio</h1></div>
+          </div>
+          <div
+            class="lg:flex list-none gap-6 justify-center items-center md:hidden hidden text-[#737373] font-semibold"
+          >
+            <li><a class="text-black" href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Contact Us</a></li>
+          </div>
+          <div class="flex gap-4 items-center">
+            <div
+              class="bg-white border px-3.5 py-2.5 rounded-full cursor-pointer hidden md:block"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div
+              class="bg-white border px-3.5 py-2.5 rounded-full cursor-pointer hidden md:block"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div
+              class="bg-[#ABEF5F] md:flex hidden gap-1 py-2 px-5 items-center rounded-full"
+            >
+              <div class="text-xl font-semibold">Book Consult</div>
+              <div>
+                <i
+                  class="-rotate-45 bg-[#1C1C1C] w-9 h-9 flex justify-center items-center rounded-full fa-solid text-white fa-arrow-right"
+                ></i>
+              </div>
+            </div>
+            <div
+              class="lg:hidden bg-white border px-3.5 py-2.5 rounded-full cursor-pointer"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- banner section start -->
+      <section
+        class="container mx-auto flex flex-col justify-center items-center p-2 "
+      >
+        <div>
+          <img src="image/banner.png" alt="" />
+        </div>
+        <div class="text-center">
+          <h2
+            class="lg:text-6xl md:text-4xl pb-5 text-2xl font-extrabold text-[0.5px Outside hsla(0,0%,13%,1)]"
+          >
+            A barn house of this design has a <br />
+            striking appearance
+          </h2>
+          <p
+            class="md:text-[16px] p-4 text-[14px] text-[hsla(0,0%,29%,1)] font-[500]"
+          >
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal <br />
+            accents, and large windows that flood the space with natural light.
+          </p>
+        </div>
+        <div class="md:pb-32 pb-7">
+          <div
+            class="bg-[hsla(88,81%,65%,0.5)] flex md:flex gap-2 md:py-2 md:px-5 py-2 px-16 items-center rounded-full"
+          >
+            <div class="md:text-xl font-semibold">View Details</div>
+            <div>
+              <i
+                class="-rotate-45 bg-[hsla(88,81%,65%,1)] rounded-full px-2.5 py-2.5 fa-solid text-black fa-arrow-right"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner section end -->
+    </header>
+
+    <!-- header section end -->
+    <!-- main section start -->
